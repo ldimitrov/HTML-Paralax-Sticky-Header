@@ -1,0 +1,77 @@
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+body {
+  font-family: "Varela Round";
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  background: url("https://raw.github.com/pederan/ImageScroll/master/demo/img/german_landscapes-1600x900.jpg");
+  background-size: cover;
+  background-position: 50% 0%;
+}
+
+.image:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.container {
+  max-width: 80%;
+  width: 960px;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.sticky-header {
+  position: absolute;
+  bottom: 120px;
+  z-index: 2;
+  color: white;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.header-title {
+  font-size: 5vw;
+  font-weight: 900;
+  position: relative;
+  color: white;
+}
+
+.header-subtitle {
+  font-weight: 100;
+  font-size: 2vw;
+  padding-top: 10px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.heading {
+  font-style: italic;
+  font-weight: 900;
+  font-size: 22px;
+  font-family: "Varela Round";
+}
+
+.text-container {
+  padding: 0px 70px;
+  text-align: left;
+  font-weight: 100;
+}
+
+.footer {
+    text-align: center;
+    font-weight: 400;
+}
